@@ -22,12 +22,12 @@ RUN apt-get install --yes libzfslinux-dev
 RUN dpkg --configure -a
 
 
-RUN go get github.com/ncabatoff/go-libzfs github.com/prometheus/client_golang/prometheus
+RUN go get github.com/derekgottlieb/go-libzfs github.com/prometheus/client_golang/prometheus
 
 # Copy the local package files to the container's workspace.
-ADD zfs-exporter /go/src/github.com/ncabatoff/zfs-exporter
+ADD zfs-exporter /go/src/github.com/derekgottlieb/zfs-exporter
 
-RUN go install github.com/ncabatoff/zfs-exporter
+RUN go install github.com/derekgottlieb/zfs-exporter
 
 USER root
 

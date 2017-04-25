@@ -7,7 +7,7 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/ncabatoff/go-libzfs"
+	"github.com/derekgottlieb/go-libzfs"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
